@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a0b" />
+  <title>Izaak</title>
+  <meta name="description" content="Izaak — bio site. Projects, music, stats, guestbook." />
+  <meta property="og:title" content="Izaak" />
+  <meta property="og:description" content="Bio site. Projects, music, stats, guestbook." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://i.postimg.cc/1ttJqD1L/blue.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="https://i.postimg.cc/1ttJqD1L/blue.jpg" />
+  <link rel="preconnect" href="https://i.postimg.cc" crossorigin />
+  <link rel="stylesheet" href="/assets/css/tokens.css" />
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+  <!-- Turnstile (loaded only when guestbook scrolls into view) -->
+</head>
+<body>
+  <a class="skip" href="#hero">Skip to content</a>
+
+  <nav class="navpill" aria-label="Section navigation">
+    <a href="#hero" data-target="hero" aria-label="Home" class="active">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 3l9 8v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1V11z"/></svg>
+    </a>
+    <a href="#socials" data-target="socials" aria-label="Socials">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+    </a>
+    <a href="#projects" data-target="projects" aria-label="Projects">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+    </a>
+    <a href="#stats" data-target="stats" aria-label="Stats">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+    </a>
+    <a href="#guestbook" data-target="guestbook" aria-label="Guestbook">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14l-4-3H6a2 2 0 0 1-2-2V5z"/></svg>
+    </a>
+    <a href="#cats" data-target="cats" aria-label="Cats">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5l4 4h10l4-4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5z"/></svg>
+    </a>
+    <a href="#footer" data-target="footer" aria-label="Clock">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+    </a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <img class="avatar" src="https://i.postimg.cc/1ttJqD1L/blue.jpg" alt="Izaak avatar" width="128" height="128" />
+      <h1 class="name">Izaak</h1>
+      <span class="status" data-discord-status>
+        <span class="dot" data-status-dot></span>
+        <span data-status-label>Loading…</span>
+      </span>
+      <p class="views" aria-live="polite">
+        <span class="num" data-views-total>—</span> views
+        <span class="sep">·</span>
+        <span class="num" data-views-today>—</span> today
+      </p>
+
+      <article class="card lastplayed" aria-label="Last played track">
+        <img data-lp-art alt="" width="56" height="56" />
+        <div class="lp-meta">
+          <span class="lp-label" data-lp-label>Last Played</span>
+          <strong data-lp-title>—</strong>
+          <span data-lp-artist>—</span>
+        </div>
+      </article>
+
+      <a href="#socials" class="scrollhint" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- SOCIALS -->
+    <section id="socials" class="section">
+      <h2>Socials</h2>
+      <div class="grid socials-grid">
+        <a class="card social" href="/redirect?to=https%3A%2F%2Fdiscord.com%2Fusers%2F1329547310887207025">
+          <span class="social-icon">DC</span>
+          <span class="social-meta">
+            <strong>Discord</strong>
+            <span data-discord-handle>@uh.izaak</span>
+          </span>
+        </a>
+        <a class="card social" href="/redirect?to=https%3A%2F%2Freddit.com%2Fuser%2Fssprix">
+          <span class="social-icon">RD</span>
+          <span class="social-meta">
+            <strong>Reddit</strong>
+            <span><span data-reddit-karma>200,193</span> karma</span>
+          </span>
+        </a>
+        <a class="card social" href="/redirect?to=https%3A%2F%2Fgithub.com%2Fiz-aak">
+          <span class="social-icon">GH</span>
+          <span class="social-meta">
+            <strong>GitHub</strong>
+            <span data-github-latest>iz-aak</span>
+          </span>
+        </a>
+        <a class="card social" href="/redirect?to=https%3A%2F%2Ftwitter.com%2Fuhizaak">
+          <span class="social-icon">X</span>
+          <span class="social-meta">
+            <strong>Twitter / X</strong>
+            <span>@uhizaak</span>
+          </span>
+        </a>
+        <a class="card social" href="/redirect?to=https%3A%2F%2Finstagram.com%2Fuh.izaak">
+          <span class="social-icon">IG</span>
+          <span class="social-meta">
+            <strong>Instagram</strong>
+            <span>@uh.izaak</span>
+          </span>
+        </a>
+        <a class="card social" href="/redirect?to=mailto%3Aizaak%40cc.cc">
+          <span class="social-icon">@</span>
+          <span class="social-meta">
+            <strong>Email</strong>
+            <span>izaak@cc.cc</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid projects-grid" data-projects></div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="section">
+      <h2>Stats</h2>
+      <div class="grid stats-grid" data-stats>
+        <div class="card stat skel" aria-busy="true"></div>
+        <div class="card stat skel" aria-busy="true"></div>
+        <div class="card stat skel" aria-busy="true"></div>
+        <div class="card stat skel" aria-busy="true"></div>
+      </div>
+    </section>
+
+    <!-- GUESTBOOK -->
+    <section id="guestbook" class="section">
+      <h2>Guestbook</h2>
+      <form class="card gb-form" data-gb-form novalidate>
+        <div class="gb-row">
+          <input name="name" maxlength="32" placeholder="Name" required autocomplete="nickname" />
+          <input name="emoji" maxlength="2" placeholder="✨" class="gb-emoji" />
+        </div>
+        <textarea name="message" maxlength="200" placeholder="Leave a message…" required rows="3"></textarea>
+        <div class="gb-actions">
+          <span class="gb-count"><span data-gb-len>0</span>/200</span>
+          <div class="cf-turnstile" data-turnstile></div>
+          <button type="submit">Sign</button>
+        </div>
+        <p class="gb-msg" data-gb-msg role="status"></p>
+      </form>
+      <ul class="gb-list" data-gb-list>
+        <li class="card skel gb-skel"></li>
+        <li class="card skel gb-skel"></li>
+        <li class="card skel gb-skel"></li>
+      </ul>
+      <button class="gb-more" data-gb-more hidden>Load more</button>
+    </section>
+
+    <!-- CATS -->
+    <section id="cats" class="section">
+      <h2>Cats <span aria-hidden="true">❤️</span></h2>
+      <div class="cats-grid" data-cats>
+        <button class="cat" data-src="https://i.postimg.cc/76kXKjzK/20250927-154236.jpg"><img loading="lazy" src="https://i.postimg.cc/76kXKjzK/20250927-154236.jpg" alt="cat" /></button>
+        <button class="cat" data-src="https://i.postimg.cc/JhWb8ZhZ/20260221-202453.jpg"><img loading="lazy" src="https://i.postimg.cc/JhWb8ZhZ/20260221-202453.jpg" alt="cat" /></button>
+        <button class="cat" data-src="https://i.postimg.cc/YCQWd0xS/20260219-125517.jpg"><img loading="lazy" src="https://i.postimg.cc/YCQWd0xS/20260219-125517.jpg" alt="cat" /></button>
+        <button class="cat" data-src="https://i.postimg.cc/pr99zLd6/24116.jpg"><img loading="lazy" src="https://i.postimg.cc/pr99zLd6/24116.jpg" alt="cat" /></button>
+        <button class="cat" data-src="https://i.postimg.cc/sgPMp8V7/20260124-224934.jpg"><img loading="lazy" src="https://i.postimg.cc/sgPMp8V7/20260124-224934.jpg" alt="cat" /></button>
+        <button class="cat" data-src="https://i.postimg.cc/c6yJ3722/20251011-205832.jpg"><img loading="lazy" src="https://i.postimg.cc/c6yJ3722/20251011-205832.jpg" alt="cat" /></button>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <span class="clock" data-clock>--:--:--</span>
+      <span class="loc">United Kingdom</span>
+      <a href="/redirect?to=mailto%3Aadmin%40fluxtv.qzz.io">DMCA</a>
+    </footer>
+  </main>
+
+  <!-- Lightbox -->
+  <dialog class="lightbox" data-lightbox>
+    <button class="lb-close" data-lb-close aria-label="Close">×</button>
+    <img alt="" />
+  </dialog>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
